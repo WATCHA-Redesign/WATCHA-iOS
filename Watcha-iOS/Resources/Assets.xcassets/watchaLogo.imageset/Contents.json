@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "scale" : "1x",
+      "idiom" : "universal",
+      "filename" : "watchaLogo.png"
+    },
+    {
+      "filename" : "watchaLogo@2x.png",
+      "scale" : "2x",
+      "idiom" : "universal"
+    },
+    {
+      "scale" : "3x",
+      "filename" : "watchaLogo@3x.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

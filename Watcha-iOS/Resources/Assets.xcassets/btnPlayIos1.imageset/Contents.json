@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "scale" : "1x",
+      "idiom" : "universal",
+      "filename" : "btnPlayIos1.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "btnPlayIos1@2x.png"
+    },
+    {
+      "filename" : "btnPlayIos1@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

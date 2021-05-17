@@ -28,6 +28,10 @@
 		709CD1612651972100A1C445 /* SmallPosterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD1602651972100A1C445 /* SmallPosterModel.swift */; };
 		709CD1642651974A00A1C445 /* CrewCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD1632651974A00A1C445 /* CrewCollectionModel.swift */; };
 		709CD1672651975B00A1C445 /* NameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD1662651975B00A1C445 /* NameModel.swift */; };
+		FC200B072652B40100F320DC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200B062652B40100F320DC /* MyPageViewController.swift */; };
+		FC200B0B2652B4B800F320DC /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC200B0A2652B4B800F320DC /* MyPage.storyboard */; };
+		FC200B0D2652B4C300F320DC /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200B0C2652B4C300F320DC /* CategoryViewController.swift */; };
+		FC200B0F2652B4D000F320DC /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC200B0E2652B4D000F320DC /* Category.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		709CD1632651974A00A1C445 /* CrewCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewCollectionModel.swift; sourceTree = "<group>"; };
 		709CD1662651975B00A1C445 /* NameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameModel.swift; sourceTree = "<group>"; };
 		78A0ECAE6308980422F8841F /* Pods_Watcha_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watcha_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC200B062652B40100F320DC /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		FC200B0A2652B4B800F320DC /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		FC200B0C2652B4C300F320DC /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		FC200B0E2652B4D000F320DC /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,8 @@
 		709CD1002651603D00A1C445 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				FC200B092652B49C00F320DC /* Category */,
+				FC200B082652B49400F320DC /* MyPage */,
 				709CD1212651654B00A1C445 /* Model */,
 				709CD1172651643200A1C445 /* Home */,
 				709CD1222651655200A1C445 /* Search */,
@@ -237,6 +247,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC200B082652B49400F320DC /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				FC200B062652B40100F320DC /* MyPageViewController.swift */,
+				FC200B0A2652B4B800F320DC /* MyPage.storyboard */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		FC200B092652B49C00F320DC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FC200B0C2652B4C300F320DC /* CategoryViewController.swift */,
+				FC200B0E2652B4D000F320DC /* Category.storyboard */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -296,10 +324,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC200B0F2652B4D000F320DC /* Category.storyboard in Resources */,
 				709CD0F62651601C00A1C445 /* LaunchScreen.storyboard in Resources */,
 				709CD14A265167CA00A1C445 /* MainPosterCollectionViewCell.xib in Resources */,
 				709CD0F32651601C00A1C445 /* Assets.xcassets in Resources */,
 				709CD109265160C400A1C445 /* Home.storyboard in Resources */,
+				FC200B0B2652B4B800F320DC /* MyPage.storyboard in Resources */,
 				709CD11B265164A100A1C445 /* Main.storyboard in Resources */,
 				709CD1272651657700A1C445 /* Search.storyboard in Resources */,
 			);
@@ -358,12 +388,14 @@
 				709CD0EA2651601A00A1C445 /* AppDelegate.swift in Sources */,
 				709CD15A2651970800A1C445 /* BigVideoModel.swift in Sources */,
 				709CD135265165AE00A1C445 /* UIFont.swift in Sources */,
+				FC200B0D2652B4C300F320DC /* CategoryViewController.swift in Sources */,
 				709CD0EC2651601A00A1C445 /* SceneDelegate.swift in Sources */,
 				709CD149265167CA00A1C445 /* MainPosterCollectionViewCell.swift in Sources */,
 				709CD1672651975B00A1C445 /* NameModel.swift in Sources */,
 				709CD138265165C300A1C445 /* Constants.swift in Sources */,
 				709CD15126516B2300A1C445 /* PosterModel.swift in Sources */,
 				709CD1612651972100A1C445 /* SmallPosterModel.swift in Sources */,
+				FC200B072652B40100F320DC /* MyPageViewController.swift in Sources */,
 				709CD12F2651659600A1C445 /* HomeViewController.swift in Sources */,
 				709CD132265165A200A1C445 /* UIColor.swift in Sources */,
 				709CD157265196FA00A1C445 /* SmallVideoModel.swift in Sources */,

@@ -11,11 +11,16 @@ class SearchViewController: UIViewController {
     
     
     //MARK:- IBOutlet Part
-    
+
     
     
     //MARK:- Variable Part
     
+    @IBOutlet weak var searchPlaceholder: UITextField!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     //MARK:- Constraint Part
     
@@ -25,11 +30,13 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor.black
+
     }
     
     //MARK:- IBAction Part
     /// IBAction 함수 명은 동사 형태로!!
+
     
     
     //MARK:- default Setting Function Part
