@@ -10,32 +10,36 @@ import UIKit
 class SearchViewController: UIViewController {
     
     
-    //MARK:- IBOutlet Part
+    //MARK:- IBOutlet
 
-    
-    
-    //MARK:- Variable Part
-    
+    @IBOutlet var mainTableView: UITableView!
     @IBOutlet weak var searchPlaceholder: UITextField!
+    
+    
+    //MARK:- Variable
+    
+    var titles: [SearchTitleModel] = []
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
-    //MARK:- Constraint Part
+    //MARK:- Constraint
     
     
-    //MARK:- Life Cycle Part
+    
+    //MARK:- Life Cycle
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black
+        tableViewSetting()
+        setTitleData()
 
     }
     
-    //MARK:- IBAction Part
-    /// IBAction 함수 명은 동사 형태로!!
+    //MARK:- IBAction
 
     
     
@@ -47,18 +51,79 @@ class SearchViewController: UIViewController {
     ///    }
     
     
-    //MARK:- Function Part
+    func tableViewSetting() {
+        mainTableView.delegate = self
+        mainTableView.dataSource = self
+        
+        mainTableView.register(MyCustomHeader.self, forHeaderFooterViewReuseIdentifier: "sectionHeader")
+        
+        mainTableView.backgroundColor = .watcha_bg
+        mainTableView.sectionHeaderHeight = CGFloat(51.0)
+    }
+    
+    
+    func setTitleData() {
+        titles.append(contentsOf: [
+            
+            SearchTitleModel(title: "인기 검색 콘텐츠"),
+            SearchTitleModel(title: "높은 평점의 추천 콘텐츠"),
+            SearchTitleModel(title: "왓챠 크루들의 컬렉션"),
+            SearchTitleModel(title: "당신의 영화 메이트")
+        
+        ])
+    }
+    
+    
+    //MARK:- Function
     /// 로직을 구현 하는 함수 부분입니다. // 함수명 lowerCamelCase 사용
     
     
+}
+
+    //MARK:- extension
+
+extension SearchViewController: UITableViewDelegate {
     
-    //MARK:- extension 부분
-    /// UICollectionViewDelegate 부분 처럼 외부 프로토콜을 채택하는 경우나, 외부 클래스 확장 할 때,  extension을 작성하는 부분입니다
-    /// ex) extension ViewController : UICollectionViewDelegate {  code …. }
-    
-    
-    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = tableView.dequeueReusableHeaderFooterView(withIdentifier:
+                                                                "sectionHeader") as! MyCustomHeader
+        
+        view.tintColor = .watcha_bg
+        view.titleLabel.textColor = .watcha_white
+        view.titleLabel.text = titles[section].title
+        
+        return view
+    }
     
     
     
 }
+
+extension SearchViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        titles.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //임시 테이블 뷰 띄우기
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = self.mainTableView.dequeueReusableCell(withIdentifier: "SmallPosterTVC") as? SmallPosterTVC else { return UITableViewCell() }
+        cell.backgroundColor = .watcha_bg
+
+        return cell
+    }
+    
+    
+}
+
+
+
+        
+    
+    
+    
+    
