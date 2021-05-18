@@ -28,6 +28,12 @@
 		709CD1612651972100A1C445 /* SmallPosterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD1602651972100A1C445 /* SmallPosterModel.swift */; };
 		709CD1642651974A00A1C445 /* CrewCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD1632651974A00A1C445 /* CrewCollectionModel.swift */; };
 		709CD1672651975B00A1C445 /* NameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD1662651975B00A1C445 /* NameModel.swift */; };
+		70BE632C2652E5CA00F2678F /* SmallPosterCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE632A2652E5CA00F2678F /* SmallPosterCVC.swift */; };
+		70BE632D2652E5CA00F2678F /* SmallPosterCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE632B2652E5CA00F2678F /* SmallPosterCVC.xib */; };
+		70BE63392652F41800F2678F /* MyCustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE63382652F41800F2678F /* MyCustomHeader.swift */; };
+		70BE63502652FBFB00F2678F /* SearchTitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE634F2652FBFB00F2678F /* SearchTitleModel.swift */; };
+		70BE63562653018600F2678F /* SmallPosterTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE63542653018600F2678F /* SmallPosterTVC.swift */; };
+		70BE63572653018600F2678F /* SmallPosterTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE63552653018600F2678F /* SmallPosterTVC.xib */; };
 		FC200B072652B40100F320DC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200B062652B40100F320DC /* MyPageViewController.swift */; };
 		FC200B0B2652B4B800F320DC /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC200B0A2652B4B800F320DC /* MyPage.storyboard */; };
 		FC200B0D2652B4C300F320DC /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200B0C2652B4C300F320DC /* CategoryViewController.swift */; };
@@ -59,6 +65,12 @@
 		709CD1602651972100A1C445 /* SmallPosterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPosterModel.swift; sourceTree = "<group>"; };
 		709CD1632651974A00A1C445 /* CrewCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewCollectionModel.swift; sourceTree = "<group>"; };
 		709CD1662651975B00A1C445 /* NameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameModel.swift; sourceTree = "<group>"; };
+		70BE632A2652E5CA00F2678F /* SmallPosterCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPosterCVC.swift; sourceTree = "<group>"; };
+		70BE632B2652E5CA00F2678F /* SmallPosterCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallPosterCVC.xib; sourceTree = "<group>"; };
+		70BE63382652F41800F2678F /* MyCustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomHeader.swift; sourceTree = "<group>"; };
+		70BE634F2652FBFB00F2678F /* SearchTitleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTitleModel.swift; sourceTree = "<group>"; };
+		70BE63542653018600F2678F /* SmallPosterTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPosterTVC.swift; sourceTree = "<group>"; };
+		70BE63552653018600F2678F /* SmallPosterTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallPosterTVC.xib; sourceTree = "<group>"; };
 		78A0ECAE6308980422F8841F /* Pods_Watcha_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watcha_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC200B062652B40100F320DC /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		FC200B0A2652B4B800F320DC /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
@@ -198,9 +210,6 @@
 				709CD15026516B2300A1C445 /* PosterModel.swift */,
 				709CD156265196FA00A1C445 /* SmallVideoModel.swift */,
 				709CD1592651970800A1C445 /* BigVideoModel.swift */,
-				709CD1602651972100A1C445 /* SmallPosterModel.swift */,
-				709CD1632651974A00A1C445 /* CrewCollectionModel.swift */,
-				709CD1662651975B00A1C445 /* NameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +220,7 @@
 				709CD1262651657700A1C445 /* Search.storyboard */,
 				709CD1292651658600A1C445 /* SearchViewController.swift */,
 				709CD1252651656700A1C445 /* Cells */,
+				70BE635A265308D400F2678F /* Model */,
 				709CD1232651655D00A1C445 /* Service */,
 			);
 			path = Search;
@@ -226,6 +236,8 @@
 		709CD1252651656700A1C445 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				70BE63202652E53500F2678F /* Table Cell */,
+				70BE63212652E53B00F2678F /* Collection Cells */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -237,6 +249,76 @@
 				709CD148265167CA00A1C445 /* MainPosterCollectionViewCell.xib */,
 			);
 			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		70BE63202652E53500F2678F /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				70BE63442652FAA200F2678F /* SmallPosterTVC */,
+				70BE63382652F41800F2678F /* MyCustomHeader.swift */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		70BE63212652E53B00F2678F /* Collection Cells */ = {
+			isa = PBXGroup;
+			children = (
+				70BE632F2652E5D300F2678F /* SmallPosterCVC */,
+				70BE63302652E5E400F2678F /* RecommandCVC */,
+				70BE63312652E5EF00F2678F /* CrewPickCVC */,
+				70BE63322652E5F700F2678F /* DirectorCVC */,
+			);
+			path = "Collection Cells";
+			sourceTree = "<group>";
+		};
+		70BE632F2652E5D300F2678F /* SmallPosterCVC */ = {
+			isa = PBXGroup;
+			children = (
+				70BE632A2652E5CA00F2678F /* SmallPosterCVC.swift */,
+				70BE632B2652E5CA00F2678F /* SmallPosterCVC.xib */,
+			);
+			path = SmallPosterCVC;
+			sourceTree = "<group>";
+		};
+		70BE63302652E5E400F2678F /* RecommandCVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RecommandCVC;
+			sourceTree = "<group>";
+		};
+		70BE63312652E5EF00F2678F /* CrewPickCVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CrewPickCVC;
+			sourceTree = "<group>";
+		};
+		70BE63322652E5F700F2678F /* DirectorCVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DirectorCVC;
+			sourceTree = "<group>";
+		};
+		70BE63442652FAA200F2678F /* SmallPosterTVC */ = {
+			isa = PBXGroup;
+			children = (
+				70BE63542653018600F2678F /* SmallPosterTVC.swift */,
+				70BE63552653018600F2678F /* SmallPosterTVC.xib */,
+			);
+			path = SmallPosterTVC;
+			sourceTree = "<group>";
+		};
+		70BE635A265308D400F2678F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				709CD1632651974A00A1C445 /* CrewCollectionModel.swift */,
+				70BE634F2652FBFB00F2678F /* SearchTitleModel.swift */,
+				709CD1602651972100A1C445 /* SmallPosterModel.swift */,
+				709CD1662651975B00A1C445 /* NameModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		80D52F3106DB6F52B6753F62 /* Frameworks */ = {
@@ -326,6 +408,8 @@
 			files = (
 				FC200B0F2652B4D000F320DC /* Category.storyboard in Resources */,
 				709CD0F62651601C00A1C445 /* LaunchScreen.storyboard in Resources */,
+				70BE63572653018600F2678F /* SmallPosterTVC.xib in Resources */,
+				70BE632D2652E5CA00F2678F /* SmallPosterCVC.xib in Resources */,
 				709CD14A265167CA00A1C445 /* MainPosterCollectionViewCell.xib in Resources */,
 				709CD0F32651601C00A1C445 /* Assets.xcassets in Resources */,
 				709CD109265160C400A1C445 /* Home.storyboard in Resources */,
@@ -387,18 +471,22 @@
 				709CD12A2651658600A1C445 /* SearchViewController.swift in Sources */,
 				709CD0EA2651601A00A1C445 /* AppDelegate.swift in Sources */,
 				709CD15A2651970800A1C445 /* BigVideoModel.swift in Sources */,
+				70BE63502652FBFB00F2678F /* SearchTitleModel.swift in Sources */,
 				709CD135265165AE00A1C445 /* UIFont.swift in Sources */,
 				FC200B0D2652B4C300F320DC /* CategoryViewController.swift in Sources */,
 				709CD0EC2651601A00A1C445 /* SceneDelegate.swift in Sources */,
 				709CD149265167CA00A1C445 /* MainPosterCollectionViewCell.swift in Sources */,
 				709CD1672651975B00A1C445 /* NameModel.swift in Sources */,
 				709CD138265165C300A1C445 /* Constants.swift in Sources */,
+				70BE63392652F41800F2678F /* MyCustomHeader.swift in Sources */,
 				709CD15126516B2300A1C445 /* PosterModel.swift in Sources */,
 				709CD1612651972100A1C445 /* SmallPosterModel.swift in Sources */,
 				FC200B072652B40100F320DC /* MyPageViewController.swift in Sources */,
+				70BE632C2652E5CA00F2678F /* SmallPosterCVC.swift in Sources */,
 				709CD12F2651659600A1C445 /* HomeViewController.swift in Sources */,
 				709CD132265165A200A1C445 /* UIColor.swift in Sources */,
 				709CD157265196FA00A1C445 /* SmallVideoModel.swift in Sources */,
+				70BE63562653018600F2678F /* SmallPosterTVC.swift in Sources */,
 				709CD1642651974A00A1C445 /* CrewCollectionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
