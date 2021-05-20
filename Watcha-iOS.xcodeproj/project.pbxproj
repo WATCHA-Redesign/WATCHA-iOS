@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		054D2017464DFF9CFED0835C /* Pods_Watcha_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A0ECAE6308980422F8841F /* Pods_Watcha_iOS.framework */; };
+		4002D3A02653375F00A97BB7 /* FirstSmallVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002D39F2653375F00A97BB7 /* FirstSmallVideoCollectionViewCell.swift */; };
+		40AAFF3E26535F2A008F6E78 /* BigVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AAFF3D26535F2A008F6E78 /* BigVideoCollectionViewCell.swift */; };
+		40AAFF462653937A008F6E78 /* SecondSmallVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AAFF452653937A008F6E78 /* SecondSmallVideoCollectionViewCell.swift */; };
 		709CD0EA2651601A00A1C445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD0E92651601A00A1C445 /* AppDelegate.swift */; };
 		709CD0EC2651601A00A1C445 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD0EB2651601A00A1C445 /* SceneDelegate.swift */; };
 		709CD0F32651601C00A1C445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709CD0F22651601C00A1C445 /* Assets.xcassets */; };
@@ -21,7 +24,6 @@
 		709CD135265165AE00A1C445 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD134265165AE00A1C445 /* UIFont.swift */; };
 		709CD138265165C300A1C445 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD137265165C300A1C445 /* Constants.swift */; };
 		709CD149265167CA00A1C445 /* MainPosterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD147265167CA00A1C445 /* MainPosterCollectionViewCell.swift */; };
-		709CD14A265167CA00A1C445 /* MainPosterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709CD148265167CA00A1C445 /* MainPosterCollectionViewCell.xib */; };
 		709CD15126516B2300A1C445 /* PosterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD15026516B2300A1C445 /* PosterModel.swift */; };
 		709CD157265196FA00A1C445 /* SmallVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD156265196FA00A1C445 /* SmallVideoModel.swift */; };
 		709CD15A2651970800A1C445 /* BigVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD1592651970800A1C445 /* BigVideoModel.swift */; };
@@ -37,6 +39,9 @@
 /* Begin PBXFileReference section */
 		091A91516E03B3616C9E975E /* Pods-Watcha-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watcha-iOS.release.xcconfig"; path = "Target Support Files/Pods-Watcha-iOS/Pods-Watcha-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		34493663EED402D2AC614590 /* Pods-Watcha-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watcha-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Watcha-iOS/Pods-Watcha-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4002D39F2653375F00A97BB7 /* FirstSmallVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSmallVideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		40AAFF3D26535F2A008F6E78 /* BigVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigVideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		40AAFF452653937A008F6E78 /* SecondSmallVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSmallVideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		709CD0E62651601A00A1C445 /* Watcha-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watcha-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		709CD0E92651601A00A1C445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		709CD0EB2651601A00A1C445 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +57,6 @@
 		709CD134265165AE00A1C445 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		709CD137265165C300A1C445 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		709CD147265167CA00A1C445 /* MainPosterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPosterCollectionViewCell.swift; sourceTree = "<group>"; };
-		709CD148265167CA00A1C445 /* MainPosterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPosterCollectionViewCell.xib; sourceTree = "<group>"; };
 		709CD15026516B2300A1C445 /* PosterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterModel.swift; sourceTree = "<group>"; };
 		709CD156265196FA00A1C445 /* SmallVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVideoModel.swift; sourceTree = "<group>"; };
 		709CD1592651970800A1C445 /* BigVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigVideoModel.swift; sourceTree = "<group>"; };
@@ -234,7 +238,9 @@
 			isa = PBXGroup;
 			children = (
 				709CD147265167CA00A1C445 /* MainPosterCollectionViewCell.swift */,
-				709CD148265167CA00A1C445 /* MainPosterCollectionViewCell.xib */,
+				4002D39F2653375F00A97BB7 /* FirstSmallVideoCollectionViewCell.swift */,
+				40AAFF3D26535F2A008F6E78 /* BigVideoCollectionViewCell.swift */,
+				40AAFF452653937A008F6E78 /* SecondSmallVideoCollectionViewCell.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -326,7 +332,6 @@
 			files = (
 				FC200B0F2652B4D000F320DC /* Category.storyboard in Resources */,
 				709CD0F62651601C00A1C445 /* LaunchScreen.storyboard in Resources */,
-				709CD14A265167CA00A1C445 /* MainPosterCollectionViewCell.xib in Resources */,
 				709CD0F32651601C00A1C445 /* Assets.xcassets in Resources */,
 				709CD109265160C400A1C445 /* Home.storyboard in Resources */,
 				FC200B0B2652B4B800F320DC /* MyPage.storyboard in Resources */,
@@ -388,12 +393,15 @@
 				709CD0EA2651601A00A1C445 /* AppDelegate.swift in Sources */,
 				709CD15A2651970800A1C445 /* BigVideoModel.swift in Sources */,
 				709CD135265165AE00A1C445 /* UIFont.swift in Sources */,
+				40AAFF3E26535F2A008F6E78 /* BigVideoCollectionViewCell.swift in Sources */,
 				FC200B0D2652B4C300F320DC /* CategoryViewController.swift in Sources */,
 				709CD0EC2651601A00A1C445 /* SceneDelegate.swift in Sources */,
+				4002D3A02653375F00A97BB7 /* FirstSmallVideoCollectionViewCell.swift in Sources */,
 				709CD149265167CA00A1C445 /* MainPosterCollectionViewCell.swift in Sources */,
 				709CD1672651975B00A1C445 /* NameModel.swift in Sources */,
 				709CD138265165C300A1C445 /* Constants.swift in Sources */,
 				709CD15126516B2300A1C445 /* PosterModel.swift in Sources */,
+				40AAFF462653937A008F6E78 /* SecondSmallVideoCollectionViewCell.swift in Sources */,
 				709CD1612651972100A1C445 /* SmallPosterModel.swift in Sources */,
 				FC200B072652B40100F320DC /* MyPageViewController.swift in Sources */,
 				709CD12F2651659600A1C445 /* HomeViewController.swift in Sources */,
