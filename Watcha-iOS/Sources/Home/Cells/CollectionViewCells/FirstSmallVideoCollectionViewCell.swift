@@ -22,5 +22,6 @@ class FirstSmallVideoCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         title.textColor = UIColor.watcha_lightgray2
+//        title.font = UIFont.explain_small_rg_12
     }
 }

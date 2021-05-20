@@ -23,5 +23,6 @@ class SecondSmallVideoCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         title.textColor = UIColor.watcha_lightgray
+//        title.font = UIFont.explain_small_number
     }
 }

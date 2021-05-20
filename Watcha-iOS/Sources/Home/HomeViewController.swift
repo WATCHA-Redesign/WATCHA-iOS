@@ -96,7 +96,9 @@ class HomeViewController: UIViewController {
     
     func fontSet() {
         firstSmallVideoLabel.textColor = UIColor.watcha_white
+//        firstSmallVideoLabel.font = UIFont.maintitle_medium_rg
         secondSmallVideoLabel.textColor = UIColor.watcha_white
+//        secondSmallVideoLabel.font = UIFont.maintitle_medium_rg
     }
     
     func firstSmallVideoSet() {
