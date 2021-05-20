@@ -50,13 +50,13 @@ class RecommandTVC: UITableViewCell {
         
         models.append(contentsOf: [
         
-            PosterModel(imageName: "cardSearchBigImg1Ios",
-                        title: "당신이 좋아할 컨텐츠",
-                        subtitle: "그녀, 슬기로운 의사생활, 기생충, \n줄무늬 파자마를 입은 소년, 인턴 등"),
+            PosterModel(imageName: "cardSearchBigAndroid1",
+                        title: "",
+                        subtitle: ""),
         
-            PosterModel(imageName: "cardSearchBigImgs2",
-                        title: "시도해보는 새로운",
-                        subtitle: "맨 인 블랙: 인터내셔널, 쾌걸춘향, \n트루 디텍티브 시즌3, 붉은 수수밭 등")
+            PosterModel(imageName: "cardSearchBigIos22",
+                        title: "",
+                        subtitle: "")
         ])
         
     }
