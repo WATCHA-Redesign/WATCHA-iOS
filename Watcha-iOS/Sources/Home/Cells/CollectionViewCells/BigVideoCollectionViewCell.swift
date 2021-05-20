@@ -24,6 +24,7 @@ class BigVideoCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         title.textColor = UIColor.watcha_lightgray
+//        title.font = UIFont.maintitle_medium_rg
         episode.textColor = UIColor.watcha_pink
         watchingUser.textColor = UIColor.watcha_inactive
     }
