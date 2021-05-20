@@ -43,7 +43,7 @@ class DirectorTVC: UITableViewCell {
         
         let flowLayout: UICollectionViewFlowLayout = LeftAlignedCollectionViewFlowLayout()
         flowLayout.minimumInteritemSpacing = 6
-        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 45)
+        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 45)
         collectionView.collectionViewLayout = flowLayout
         
     }
