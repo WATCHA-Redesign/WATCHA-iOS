@@ -15,6 +15,6 @@ struct CrewCollectionModel {
     
     init(title: String, pickerName: String) {
         self.title = title
-        self.whosPick = "\(pickerName)님 Pick!"
+        self.whosPick = pickerName
     }
 }

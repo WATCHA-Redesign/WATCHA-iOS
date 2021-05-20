@@ -1,8 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "barBottomIos.png",
       "idiom" : "universal",
+      "filename" : "barBottomIos.png",
       "scale" : "1x"
     },
     {
@@ -12,8 +12,8 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "barBottomIos@3x.png",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "barBottomIos@3x.png"
     }
   ],
   "info" : {

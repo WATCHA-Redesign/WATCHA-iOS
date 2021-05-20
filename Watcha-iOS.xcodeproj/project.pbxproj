@@ -36,6 +36,20 @@
 		70BE63502652FBFB00F2678F /* SearchTitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE634F2652FBFB00F2678F /* SearchTitleModel.swift */; };
 		70BE63562653018600F2678F /* SmallPosterTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE63542653018600F2678F /* SmallPosterTVC.swift */; };
 		70BE63572653018600F2678F /* SmallPosterTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE63552653018600F2678F /* SmallPosterTVC.xib */; };
+		70BE63612653B42900F2678F /* RecommandTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE635F2653B42900F2678F /* RecommandTVC.swift */; };
+		70BE63622653B42900F2678F /* RecommandTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE63602653B42900F2678F /* RecommandTVC.xib */; };
+		70BE636C2653B45300F2678F /* DirectorTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE636A2653B45300F2678F /* DirectorTVC.swift */; };
+		70BE636D2653B45300F2678F /* DirectorTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE636B2653B45300F2678F /* DirectorTVC.xib */; };
+		70BE63752653B4BF00F2678F /* CrewPickTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE63732653B4BF00F2678F /* CrewPickTVC.swift */; };
+		70BE63762653B4BF00F2678F /* CrewPickTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE63742653B4BF00F2678F /* CrewPickTVC.xib */; };
+		70BE637B2653B86100F2678F /* Extension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE637A2653B86100F2678F /* Extension+UITableViewCell.swift */; };
+		70BE637E2653B87100F2678F /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE637D2653B87100F2678F /* Extension+UITableView.swift */; };
+		70BE63832653C51800F2678F /* RecommandCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE63812653C51800F2678F /* RecommandCVC.swift */; };
+		70BE63842653C51800F2678F /* RecommandCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE63822653C51800F2678F /* RecommandCVC.xib */; };
+		70BE638B2653C78500F2678F /* CrewPickCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE63892653C78500F2678F /* CrewPickCVC.swift */; };
+		70BE638C2653C78500F2678F /* CrewPickCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE638A2653C78500F2678F /* CrewPickCVC.xib */; };
+		70BE63902653C79300F2678F /* DirectorCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE638E2653C79300F2678F /* DirectorCVC.swift */; };
+		70BE63912653C79300F2678F /* DirectorCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE638F2653C79300F2678F /* DirectorCVC.xib */; };
 		FC200B072652B40100F320DC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200B062652B40100F320DC /* MyPageViewController.swift */; };
 		FC200B0B2652B4B800F320DC /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC200B0A2652B4B800F320DC /* MyPage.storyboard */; };
 		FC200B0D2652B4C300F320DC /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200B0C2652B4C300F320DC /* CategoryViewController.swift */; };
@@ -75,6 +89,20 @@
 		70BE634F2652FBFB00F2678F /* SearchTitleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTitleModel.swift; sourceTree = "<group>"; };
 		70BE63542653018600F2678F /* SmallPosterTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPosterTVC.swift; sourceTree = "<group>"; };
 		70BE63552653018600F2678F /* SmallPosterTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallPosterTVC.xib; sourceTree = "<group>"; };
+		70BE635F2653B42900F2678F /* RecommandTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandTVC.swift; sourceTree = "<group>"; };
+		70BE63602653B42900F2678F /* RecommandTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommandTVC.xib; sourceTree = "<group>"; };
+		70BE636A2653B45300F2678F /* DirectorTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectorTVC.swift; sourceTree = "<group>"; };
+		70BE636B2653B45300F2678F /* DirectorTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectorTVC.xib; sourceTree = "<group>"; };
+		70BE63732653B4BF00F2678F /* CrewPickTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewPickTVC.swift; sourceTree = "<group>"; };
+		70BE63742653B4BF00F2678F /* CrewPickTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CrewPickTVC.xib; sourceTree = "<group>"; };
+		70BE637A2653B86100F2678F /* Extension+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableViewCell.swift"; sourceTree = "<group>"; };
+		70BE637D2653B87100F2678F /* Extension+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
+		70BE63812653C51800F2678F /* RecommandCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandCVC.swift; sourceTree = "<group>"; };
+		70BE63822653C51800F2678F /* RecommandCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommandCVC.xib; sourceTree = "<group>"; };
+		70BE63892653C78500F2678F /* CrewPickCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewPickCVC.swift; sourceTree = "<group>"; };
+		70BE638A2653C78500F2678F /* CrewPickCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CrewPickCVC.xib; sourceTree = "<group>"; };
+		70BE638E2653C79300F2678F /* DirectorCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectorCVC.swift; sourceTree = "<group>"; };
+		70BE638F2653C79300F2678F /* DirectorCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectorCVC.xib; sourceTree = "<group>"; };
 		78A0ECAE6308980422F8841F /* Pods_Watcha_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watcha_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC200B062652B40100F320DC /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		FC200B0A2652B4B800F320DC /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
@@ -189,6 +217,8 @@
 			children = (
 				709CD131265165A200A1C445 /* UIColor.swift */,
 				709CD134265165AE00A1C445 /* UIFont.swift */,
+				70BE637D2653B87100F2678F /* Extension+UITableView.swift */,
+				70BE637A2653B86100F2678F /* Extension+UITableViewCell.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -240,7 +270,7 @@
 		709CD1252651656700A1C445 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				70BE63202652E53500F2678F /* Table Cell */,
+				70BE63202652E53500F2678F /* Table Cells */,
 				70BE63212652E53B00F2678F /* Collection Cells */,
 			);
 			path = Cells;
@@ -257,13 +287,16 @@
 			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
-		70BE63202652E53500F2678F /* Table Cell */ = {
+		70BE63202652E53500F2678F /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
 				70BE63442652FAA200F2678F /* SmallPosterTVC */,
+				70BE635C2653B3ED00F2678F /* RecommandTVC */,
+				70BE635D2653B3F500F2678F /* CrewPickTVC */,
+				70BE635E2653B3FC00F2678F /* DirectorTVC */,
 				70BE63382652F41800F2678F /* MyCustomHeader.swift */,
 			);
-			path = "Table Cell";
+			path = "Table Cells";
 			sourceTree = "<group>";
 		};
 		70BE63212652E53B00F2678F /* Collection Cells */ = {
@@ -289,6 +322,8 @@
 		70BE63302652E5E400F2678F /* RecommandCVC */ = {
 			isa = PBXGroup;
 			children = (
+				70BE63812653C51800F2678F /* RecommandCVC.swift */,
+				70BE63822653C51800F2678F /* RecommandCVC.xib */,
 			);
 			path = RecommandCVC;
 			sourceTree = "<group>";
@@ -296,6 +331,8 @@
 		70BE63312652E5EF00F2678F /* CrewPickCVC */ = {
 			isa = PBXGroup;
 			children = (
+				70BE63892653C78500F2678F /* CrewPickCVC.swift */,
+				70BE638A2653C78500F2678F /* CrewPickCVC.xib */,
 			);
 			path = CrewPickCVC;
 			sourceTree = "<group>";
@@ -303,6 +340,8 @@
 		70BE63322652E5F700F2678F /* DirectorCVC */ = {
 			isa = PBXGroup;
 			children = (
+				70BE638E2653C79300F2678F /* DirectorCVC.swift */,
+				70BE638F2653C79300F2678F /* DirectorCVC.xib */,
 			);
 			path = DirectorCVC;
 			sourceTree = "<group>";
@@ -325,6 +364,33 @@
 				709CD1662651975B00A1C445 /* NameModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		70BE635C2653B3ED00F2678F /* RecommandTVC */ = {
+			isa = PBXGroup;
+			children = (
+				70BE635F2653B42900F2678F /* RecommandTVC.swift */,
+				70BE63602653B42900F2678F /* RecommandTVC.xib */,
+			);
+			path = RecommandTVC;
+			sourceTree = "<group>";
+		};
+		70BE635D2653B3F500F2678F /* CrewPickTVC */ = {
+			isa = PBXGroup;
+			children = (
+				70BE63732653B4BF00F2678F /* CrewPickTVC.swift */,
+				70BE63742653B4BF00F2678F /* CrewPickTVC.xib */,
+			);
+			path = CrewPickTVC;
+			sourceTree = "<group>";
+		};
+		70BE635E2653B3FC00F2678F /* DirectorTVC */ = {
+			isa = PBXGroup;
+			children = (
+				70BE636A2653B45300F2678F /* DirectorTVC.swift */,
+				70BE636B2653B45300F2678F /* DirectorTVC.xib */,
+			);
+			path = DirectorTVC;
 			sourceTree = "<group>";
 		};
 		80D52F3106DB6F52B6753F62 /* Frameworks */ = {
@@ -413,12 +479,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC200B0F2652B4D000F320DC /* Category.storyboard in Resources */,
+				70BE63622653B42900F2678F /* RecommandTVC.xib in Resources */,
 				709CD0F62651601C00A1C445 /* LaunchScreen.storyboard in Resources */,
+        
+				70BE63572653018600F2678F /* SmallPosterTVC.xib in Resources */,
+				70BE632D2652E5CA00F2678F /* SmallPosterCVC.xib in Resources */,
+				70BE636D2653B45300F2678F /* DirectorTVC.xib in Resources */,
+				709CD14A265167CA00A1C445 /* MainPosterCollectionViewCell.xib in Resources */,
+				70BE63762653B4BF00F2678F /* CrewPickTVC.xib in Resources */,
+				70BE63912653C79300F2678F /* DirectorCVC.xib in Resources */,
 				709CD0F32651601C00A1C445 /* Assets.xcassets in Resources */,
 				709CD109265160C400A1C445 /* Home.storyboard in Resources */,
 				FC200B0B2652B4B800F320DC /* MyPage.storyboard in Resources */,
 				709CD11B265164A100A1C445 /* Main.storyboard in Resources */,
 				709CD1272651657700A1C445 /* Search.storyboard in Resources */,
+				70BE638C2653C78500F2678F /* CrewPickCVC.xib in Resources */,
+				70BE63842653C51800F2678F /* RecommandCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,10 +547,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70BE638B2653C78500F2678F /* CrewPickCVC.swift in Sources */,
 				709CD12A2651658600A1C445 /* SearchViewController.swift in Sources */,
+				70BE636C2653B45300F2678F /* DirectorTVC.swift in Sources */,
 				709CD0EA2651601A00A1C445 /* AppDelegate.swift in Sources */,
+				70BE63902653C79300F2678F /* DirectorCVC.swift in Sources */,
 				709CD15A2651970800A1C445 /* BigVideoModel.swift in Sources */,
 				70BE63502652FBFB00F2678F /* SearchTitleModel.swift in Sources */,
+				70BE63832653C51800F2678F /* RecommandCVC.swift in Sources */,
 				709CD135265165AE00A1C445 /* UIFont.swift in Sources */,
 				40AAFF3E26535F2A008F6E78 /* BigVideoCollectionViewCell.swift in Sources */,
 				FC200B0D2652B4C300F320DC /* CategoryViewController.swift in Sources */,
@@ -483,8 +563,12 @@
 				709CD149265167CA00A1C445 /* MainPosterCollectionViewCell.swift in Sources */,
 				709CD1672651975B00A1C445 /* NameModel.swift in Sources */,
 				709CD138265165C300A1C445 /* Constants.swift in Sources */,
+				70BE637B2653B86100F2678F /* Extension+UITableViewCell.swift in Sources */,
+				70BE63752653B4BF00F2678F /* CrewPickTVC.swift in Sources */,
 				70BE63392652F41800F2678F /* MyCustomHeader.swift in Sources */,
+				70BE63612653B42900F2678F /* RecommandTVC.swift in Sources */,
 				709CD15126516B2300A1C445 /* PosterModel.swift in Sources */,
+				70BE637E2653B87100F2678F /* Extension+UITableView.swift in Sources */,
 				40AAFF462653937A008F6E78 /* SecondSmallVideoCollectionViewCell.swift in Sources */,
 				709CD1612651972100A1C445 /* SmallPosterModel.swift in Sources */,
 				FC200B072652B40100F320DC /* MyPageViewController.swift in Sources */,

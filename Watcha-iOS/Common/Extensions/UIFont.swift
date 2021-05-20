@@ -22,6 +22,8 @@ extension UIFont {
     //UIFont(name: "NotoSans-SemiBold", size: 14)!
     class var explain_small_number: UIFont { .systemFont(ofSize: 12, weight: .regular)! }
     //UIFont(name: "NotoSans-Regular", size: 12)!
+    class var collection_title: UIFont { .systemFont(ofSize: 16, weight: .regular)! }
+    class var collection_crew: UIFont { .systemFont(ofSize: 14, weight: .regular)! }
 
 
 }

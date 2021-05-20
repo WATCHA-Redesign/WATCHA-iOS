@@ -11,11 +11,11 @@ import UIKit
 //Search 뷰 사람 이름이랑 감독인지 아닌지 진실혹은거짓 해주면 버튼 색깔 buttonColor 변수에 담김니다
 struct NameModel {
     let name: String
-    let buttonColor: UIColor
+    let isDirector: Bool
     
     init(name: String, isDirector: Bool) {
         self.name = name
-        self.buttonColor = isDirector ? .watcha_pink : .watcha_bg
+        self.isDirector = isDirector
     }
 }
 
