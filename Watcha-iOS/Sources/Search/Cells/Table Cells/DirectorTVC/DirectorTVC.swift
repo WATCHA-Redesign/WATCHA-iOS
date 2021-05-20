@@ -41,6 +41,11 @@ class DirectorTVC: UITableViewCell {
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        let flowLayout: UICollectionViewFlowLayout = LeftAlignedCollectionViewFlowLayout()
+        flowLayout.minimumInteritemSpacing = 6
+        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 45)
+        collectionView.collectionViewLayout = flowLayout
+        
     }
     
     func setData() {
@@ -108,7 +113,7 @@ extension DirectorTVC: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 41)
+        return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 45)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -116,7 +121,29 @@ extension DirectorTVC: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 6.0
+        return -5
+        
+    }
+    
+    
+    class LeftAlignedCollectionViewFlowLayout: UICollectionViewFlowLayout {
+      override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        let attributes = super.layoutAttributesForElements(in: rect)
+        
+        var leftMargin = sectionInset.left
+        var maxY: CGFloat = -1.0
+        attributes?.forEach { layoutAttribute in
+          if layoutAttribute.representedElementCategory == .cell {
+            if layoutAttribute.frame.origin.y >= maxY {
+              leftMargin = sectionInset.left
+            }
+            layoutAttribute.frame.origin.x = leftMargin
+            leftMargin += layoutAttribute.frame.width + minimumInteritemSpacing
+            maxY = max(layoutAttribute.frame.maxY, maxY)
+          }
+        }
+        return attributes
+      }
     }
     
 }

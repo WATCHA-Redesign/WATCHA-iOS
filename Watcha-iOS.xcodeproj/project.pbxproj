@@ -50,6 +50,7 @@
 		70BE638C2653C78500F2678F /* CrewPickCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE638A2653C78500F2678F /* CrewPickCVC.xib */; };
 		70BE63902653C79300F2678F /* DirectorCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE638E2653C79300F2678F /* DirectorCVC.swift */; };
 		70BE63912653C79300F2678F /* DirectorCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE638F2653C79300F2678F /* DirectorCVC.xib */; };
+		70BE6396265666CA00F2678F /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE6395265666CA00F2678F /* LeftAlignedCollectionViewFlowLayout.swift */; };
 		FC200B072652B40100F320DC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200B062652B40100F320DC /* MyPageViewController.swift */; };
 		FC200B0B2652B4B800F320DC /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC200B0A2652B4B800F320DC /* MyPage.storyboard */; };
 		FC200B0D2652B4C300F320DC /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200B0C2652B4C300F320DC /* CategoryViewController.swift */; };
@@ -103,6 +104,7 @@
 		70BE638A2653C78500F2678F /* CrewPickCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CrewPickCVC.xib; sourceTree = "<group>"; };
 		70BE638E2653C79300F2678F /* DirectorCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectorCVC.swift; sourceTree = "<group>"; };
 		70BE638F2653C79300F2678F /* DirectorCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectorCVC.xib; sourceTree = "<group>"; };
+		70BE6395265666CA00F2678F /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		78A0ECAE6308980422F8841F /* Pods_Watcha_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watcha_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC200B062652B40100F320DC /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		FC200B0A2652B4B800F320DC /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				70BE636A2653B45300F2678F /* DirectorTVC.swift */,
+				70BE6395265666CA00F2678F /* LeftAlignedCollectionViewFlowLayout.swift */,
 				70BE636B2653B45300F2678F /* DirectorTVC.xib */,
 			);
 			path = DirectorTVC;
@@ -481,11 +484,9 @@
 				FC200B0F2652B4D000F320DC /* Category.storyboard in Resources */,
 				70BE63622653B42900F2678F /* RecommandTVC.xib in Resources */,
 				709CD0F62651601C00A1C445 /* LaunchScreen.storyboard in Resources */,
-        
 				70BE63572653018600F2678F /* SmallPosterTVC.xib in Resources */,
 				70BE632D2652E5CA00F2678F /* SmallPosterCVC.xib in Resources */,
 				70BE636D2653B45300F2678F /* DirectorTVC.xib in Resources */,
-				709CD14A265167CA00A1C445 /* MainPosterCollectionViewCell.xib in Resources */,
 				70BE63762653B4BF00F2678F /* CrewPickTVC.xib in Resources */,
 				70BE63912653C79300F2678F /* DirectorCVC.xib in Resources */,
 				709CD0F32651601C00A1C445 /* Assets.xcassets in Resources */,
@@ -547,6 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70BE6396265666CA00F2678F /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				70BE638B2653C78500F2678F /* CrewPickCVC.swift in Sources */,
 				709CD12A2651658600A1C445 /* SearchViewController.swift in Sources */,
 				70BE636C2653B45300F2678F /* DirectorTVC.swift in Sources */,
