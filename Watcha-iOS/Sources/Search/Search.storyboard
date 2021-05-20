@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ccR-O1-cgm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ccR-O1-cgm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,14 +28,14 @@
                                         <state key="normal" image="iconSearchBackIos"/>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="제목, 감독, 배우로 검색 (초성)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iqC-wU-ND4">
-                                        <rect key="frame" x="72" y="13" width="330" height="18.5"/>
+                                        <rect key="frame" x="72" y="11" width="330" height="22"/>
                                         <color key="tintColor" red="1" green="0.019607843137254902" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.52156862745098043" green="0.52549019607843139" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoO-ZS-EnX">
-                                        <rect key="frame" x="70" y="36.5" width="332" height="2"/>
+                                        <rect key="frame" x="70" y="38" width="332" height="2"/>
                                         <color key="backgroundColor" red="1" green="0.019607843137254902" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="qS2-4A-lHE"/>
@@ -59,42 +58,27 @@
                                     <constraint firstItem="iqC-wU-ND4" firstAttribute="centerY" secondItem="sma-U6-k10" secondAttribute="centerY" id="yAB-07-i8B"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yXN-fF-5mR">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AVq-co-BNN">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="viS-vu-FbH">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ego-hH-lno">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eIy-vU-vqG">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dnH-hg-ydS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sma-U6-k10" firstAttribute="leading" secondItem="dnH-hg-ydS" secondAttribute="leading" id="3Ge-8Z-ZEY"/>
-                            <constraint firstItem="dnH-hg-ydS" firstAttribute="bottom" secondItem="yXN-fF-5mR" secondAttribute="bottom" id="8Hy-Ih-wvG"/>
-                            <constraint firstItem="dnH-hg-ydS" firstAttribute="trailing" secondItem="yXN-fF-5mR" secondAttribute="trailing" id="Mh0-g3-xg3"/>
-                            <constraint firstItem="yXN-fF-5mR" firstAttribute="leading" secondItem="dnH-hg-ydS" secondAttribute="leading" id="U4c-vv-lLU"/>
-                            <constraint firstItem="yXN-fF-5mR" firstAttribute="top" secondItem="sma-U6-k10" secondAttribute="bottom" id="XYn-lc-VHT"/>
+                            <constraint firstItem="dnH-hg-ydS" firstAttribute="trailing" secondItem="AVq-co-BNN" secondAttribute="trailing" id="fxm-1u-KCX"/>
                             <constraint firstItem="sma-U6-k10" firstAttribute="trailing" secondItem="dnH-hg-ydS" secondAttribute="trailing" id="hhr-9I-vyR"/>
+                            <constraint firstItem="dnH-hg-ydS" firstAttribute="bottom" secondItem="AVq-co-BNN" secondAttribute="bottom" id="j86-Dv-EGF"/>
+                            <constraint firstItem="AVq-co-BNN" firstAttribute="top" secondItem="sma-U6-k10" secondAttribute="bottom" id="mdN-45-BBF"/>
+                            <constraint firstItem="AVq-co-BNN" firstAttribute="leading" secondItem="dnH-hg-ydS" secondAttribute="leading" id="nbU-Zm-lnM"/>
                             <constraint firstItem="sma-U6-k10" firstAttribute="top" secondItem="dnH-hg-ydS" secondAttribute="top" id="xfs-KG-FFq"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="검색" image="iconSearch" id="ziN-us-T8a"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="mainTableView" destination="AVq-co-BNN" id="eZV-Bh-m4p"/>
                         <outlet property="searchPlaceholder" destination="iqC-wU-ND4" id="os7-eC-hFL"/>
                     </connections>
                 </viewController>

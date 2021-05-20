@@ -9,13 +9,19 @@ import Foundation
 import UIKit
 
 extension UIFont {
-    
+    //Noto Sans Kannada Regular 17.0
     //MARK: 앱 폰트
-    class var maintitle_big_bold: UIFont { UIFont(name: "NotoSans-Bold", size: 32)! }
-    class var subtitle_medium_bold: UIFont { UIFont(name: "NotoSans-SemiBold", size: 14)! }
-    class var explain_small_rg_12: UIFont { UIFont(name: "NotoSans-Regular", size: 12)! }
-    class var maintitle_medium_rg: UIFont { UIFont(name: "NotoSans-SemiBold", size: 14)! }
-    class var explain_small_number: UIFont { UIFont(name: "NotoSans-Regular", size: 12)! }
+    
+    class var maintitle_big_bold: UIFont { .systemFont(ofSize: 32, weight: .bold)! }
+    //UIFont(name: "NotoSans-Bold", size: 32)!
+    class var subtitle_medium_bold: UIFont { .systemFont(ofSize: 17, weight: .semibold)! }
+    //UIFont(name: "NotoSans-SemiBold", size: 17)!
+    class var explain_small_rg_12: UIFont { .systemFont(ofSize: 12, weight: .regular)! }
+    //UIFont(name: "NotoSans-Regular", size: 12)!
+    class var maintitle_medium_rg: UIFont { .systemFont(ofSize: 14, weight: .semibold)! }
+    //UIFont(name: "NotoSans-SemiBold", size: 14)!
+    class var explain_small_number: UIFont { .systemFont(ofSize: 12, weight: .regular)! }
+    //UIFont(name: "NotoSans-Regular", size: 12)!
 
 
 }
