@@ -113,7 +113,7 @@ extension SearchViewController: UITableViewDelegate {
         case 2:
             return 100.0 // 이거 내맘임 ㄷ ㄷ
         case 3:
-            return 241.0
+            return 180.0
         default:
             return 100.0
         }
@@ -155,6 +155,7 @@ extension SearchViewController: UITableViewDataSource {
         case 3:
             
             let cell: DirectorTVC = mainTableView.dequeueReusableCell(for: indexPath)
+            cell.backgroundColor = .watcha_bg
             return cell
             
         default:
