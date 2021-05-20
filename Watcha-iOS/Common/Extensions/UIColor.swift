@@ -27,7 +27,8 @@ extension UIColor {
     class var watcha_white: UIColor { UIColor(hex: 0xFFFFFF) }
     class var watcha_black: UIColor { UIColor(hex: 0x000000) }
     class var watcha_bg: UIColor { UIColor(hex: 0x1A1A1A) }
-    class var watcha_lightgray: UIColor { UIColor(hex: 0xC3C3C3 ) }
+    class var watcha_lightgray: UIColor { UIColor(hex: 0xd9d9d9) }
+    class var watcha_lightgray2: UIColor { UIColor(hex: 0xC3C3C3 ) }
     class var watcha_gray: UIColor { UIColor(hex: 0x858687) }
     class var watcha_pink: UIColor { UIColor(hex: 0xFF0558) }
     class var watcha_inactive: UIColor { UIColor(hex: 0x5C5C5C) }
