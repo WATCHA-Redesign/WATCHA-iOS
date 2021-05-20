@@ -40,7 +40,7 @@ class MyCustomHeader: UITableViewHeaderFooterView  {
         contentView.addSubview(button)
         
         NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor, constant: 12),
+            titleLabel.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor),
             titleLabel.widthAnchor.constraint(equalToConstant: 276),
             titleLabel.heightAnchor.constraint(equalToConstant: 19),
             titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
