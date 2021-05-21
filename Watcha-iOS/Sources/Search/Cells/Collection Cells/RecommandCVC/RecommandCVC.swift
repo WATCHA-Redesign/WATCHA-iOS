@@ -24,8 +24,6 @@ class RecommandCVC: UICollectionViewCell {
     
     func configure(with model: PosterModel) {
         self.imageView.image = model.image
-        self.titleLabel.text = model.title
-        self.subtitleLabel.text = model.subtitle
     }
     
     func setStyles() {

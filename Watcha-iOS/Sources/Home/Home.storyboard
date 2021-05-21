@@ -86,7 +86,7 @@
                                                     <constraint firstAttribute="height" constant="16" id="svw-qH-3KE"/>
                                                 </constraints>
                                             </imageView>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YnC-6l-CLK">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YnC-6l-CLK">
                                                 <rect key="frame" x="0.0" y="592" width="414" height="120"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -159,7 +159,7 @@
                                                     <constraint firstAttribute="width" constant="58" id="aWY-5H-cFd"/>
                                                 </constraints>
                                             </imageView>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Ce-Bl-pil">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Ce-Bl-pil">
                                                 <rect key="frame" x="0.0" y="770" width="414" height="274"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>

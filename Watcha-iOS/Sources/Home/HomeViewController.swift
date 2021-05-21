@@ -23,6 +23,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var firstSmallVideoLabel: UILabel!
     @IBOutlet weak var secondSmallVideoLabel: UILabel!
     
+    var mainPosterList: [PosterModel] = []
     var firstSmallVideoList: [SmallVideoModel] = []
     var bigVideoList: [BigVideoModel] = []
     var secondSmallVideoList: [SmallVideoModel] = []
@@ -33,15 +34,6 @@ class HomeViewController: UIViewController {
         return .lightContent
     }
     
-    var imageArray = [ UIImage(named: "imgMainBigIos1"),
-                       UIImage(named: "imgMainBigIos2"),
-                       UIImage(named: "imgMainBigIos3"),
-                       UIImage(named: "imgMainBigIos4"),
-                       UIImage(named: "imgMainBigIos5"),
-                       UIImage(named: "imgMainBigIos6"),
-                       UIImage(named: "imgMainBigIos7")]
-    
-    
     //MARK:- Constraint Part
     
     
@@ -51,8 +43,9 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         bgColorSet()
         delegateSet()
-        pageSet()
         fontSet()
+        mainPosterSet()
+        pageSet()
         firstSmallVideoSet()
         bigVideoSet()
         secondSmallVideoSet()
@@ -91,7 +84,7 @@ class HomeViewController: UIViewController {
     }
     
     func pageSet() {
-        pageCtrl.numberOfPages = imageArray.count
+        pageCtrl.numberOfPages = mainPosterList.count
     }
     
     func fontSet() {
@@ -99,6 +92,18 @@ class HomeViewController: UIViewController {
 //        firstSmallVideoLabel.font = UIFont.maintitle_medium_rg
         secondSmallVideoLabel.textColor = UIColor.watcha_white
 //        secondSmallVideoLabel.font = UIFont.maintitle_medium_rg
+    }
+    
+    func mainPosterSet() {
+        mainPosterList.append(contentsOf: [
+            PosterModel(imageName: "imgMainBigIos1"),
+            PosterModel(imageName: "imgMainBigIos2"),
+            PosterModel(imageName: "imgMainBigIos3"),
+            PosterModel(imageName: "imgMainBigIos4"),
+            PosterModel(imageName: "imgMainBigIos5"),
+            PosterModel(imageName: "imgMainBigIos6"),
+            PosterModel(imageName: "imgMainBigIos7")
+        ])
     }
     
     func firstSmallVideoSet() {
@@ -140,7 +145,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if collectionView == mainPosterCollectionView {
-            return imageArray.count
+            return mainPosterList.count
         }
         else if collectionView == firstSmallVideoCollectionView {
             return firstSmallVideoList.count
@@ -155,7 +160,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         if collectionView == mainPosterCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainPosterCollectionViewCell", for: indexPath) as? MainPosterCollectionViewCell  else { return UICollectionViewCell() }
-            cell.posterImageView.image = imageArray[indexPath.row]
+            cell.posterImageView.image = mainPosterList[indexPath.row].image
             return cell
         }
         else if collectionView == firstSmallVideoCollectionView {

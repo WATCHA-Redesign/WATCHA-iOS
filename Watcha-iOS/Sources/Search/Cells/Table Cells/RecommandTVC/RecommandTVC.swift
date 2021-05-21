@@ -50,13 +50,8 @@ class RecommandTVC: UITableViewCell {
         
         models.append(contentsOf: [
         
-            PosterModel(imageName: "cardSearchBigAndroid1",
-                        title: "",
-                        subtitle: ""),
-        
-            PosterModel(imageName: "cardSearchBigIos22",
-                        title: "",
-                        subtitle: "")
+            PosterModel(imageName: "cardSearchBigAndroid1"),
+            PosterModel(imageName: "cardSearchBigIos22")
         ])
         
     }
