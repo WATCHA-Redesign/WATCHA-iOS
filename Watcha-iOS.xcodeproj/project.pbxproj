@@ -71,12 +71,12 @@
 		34493663EED402D2AC614590 /* Pods-Watcha-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watcha-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Watcha-iOS/Pods-Watcha-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4002D39F2653375F00A97BB7 /* FirstSmallVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSmallVideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		403173A2266808E5008F8ED4 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
-		403173A52668097B008F8ED4 /* MainBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainBannerModel.swift; path = "Watcha-iOS/Common/MainBannerModel.swift"; sourceTree = SOURCE_ROOT; };
-		403173A826680A3E008F8ED4 /* MainBannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainBannerService.swift; path = "Watcha-iOS/Common/MainBannerService.swift"; sourceTree = SOURCE_ROOT; };
+		403173A52668097B008F8ED4 /* MainBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBannerModel.swift; sourceTree = "<group>"; };
+		403173A826680A3E008F8ED4 /* MainBannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBannerService.swift; sourceTree = "<group>"; };
 		404A362826692FB800881231 /* SecondSmallVideoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSmallVideoDataModel.swift; sourceTree = "<group>"; };
 		404A362B26692FCE00881231 /* SecondSmallVideoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSmallVideoService.swift; sourceTree = "<group>"; };
-		40547FDE2668E1730098C4B2 /* FirstSmallVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstSmallVideoModel.swift; path = "Watcha-iOS/Common/FirstSmallVideoModel.swift"; sourceTree = SOURCE_ROOT; };
-		40547FE12668E2FE0098C4B2 /* FirstSmallVideoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstSmallVideoService.swift; path = "Watcha-iOS/Common/FirstSmallVideoService.swift"; sourceTree = SOURCE_ROOT; };
+		40547FDE2668E1730098C4B2 /* FirstSmallVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSmallVideoModel.swift; sourceTree = "<group>"; };
+		40547FE12668E2FE0098C4B2 /* FirstSmallVideoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSmallVideoService.swift; sourceTree = "<group>"; };
 		4071C5AE26693BBE00ED5D80 /* BigVideoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigVideoDataModel.swift; sourceTree = "<group>"; };
 		4071C5B126693BD000ED5D80 /* BigVideoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigVideoService.swift; sourceTree = "<group>"; };
 		40AAFF3D26535F2A008F6E78 /* BigVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigVideoCollectionViewCell.swift; sourceTree = "<group>"; };
