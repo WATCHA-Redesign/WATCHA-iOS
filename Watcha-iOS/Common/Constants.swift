@@ -17,6 +17,10 @@ struct Constants {
     }
     
     struct API {
-        
+        static let baseURL = "http://15.164.171.220:5000"
+        static let bannerURL = baseURL + "/api/mainpage/banner"
+        static let watchingURL = baseURL + "/api/mainpage/watching"
+        static let pediaURL = baseURL + "/api/mainpage/pedia"
+        static let recommendURL = baseURL + "/api/mainpage/recommend"
     }
 }

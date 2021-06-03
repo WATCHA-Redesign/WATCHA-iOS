@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		054D2017464DFF9CFED0835C /* Pods_Watcha_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A0ECAE6308980422F8841F /* Pods_Watcha_iOS.framework */; };
 		4002D3A02653375F00A97BB7 /* FirstSmallVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002D39F2653375F00A97BB7 /* FirstSmallVideoCollectionViewCell.swift */; };
+		403173A3266808E5008F8ED4 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403173A2266808E5008F8ED4 /* NetworkResult.swift */; };
+		403173A62668097B008F8ED4 /* MainBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403173A52668097B008F8ED4 /* MainBannerModel.swift */; };
+		403173A926680A3E008F8ED4 /* MainBannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403173A826680A3E008F8ED4 /* MainBannerService.swift */; };
+		404A362926692FB800881231 /* SecondSmallVideoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A362826692FB800881231 /* SecondSmallVideoDataModel.swift */; };
+		404A362C26692FCE00881231 /* SecondSmallVideoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A362B26692FCE00881231 /* SecondSmallVideoService.swift */; };
+		40547FDF2668E1730098C4B2 /* FirstSmallVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40547FDE2668E1730098C4B2 /* FirstSmallVideoModel.swift */; };
+		40547FE22668E2FE0098C4B2 /* FirstSmallVideoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40547FE12668E2FE0098C4B2 /* FirstSmallVideoService.swift */; };
+		4071C5AF26693BBE00ED5D80 /* BigVideoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4071C5AE26693BBE00ED5D80 /* BigVideoDataModel.swift */; };
+		4071C5B226693BD000ED5D80 /* BigVideoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4071C5B126693BD000ED5D80 /* BigVideoService.swift */; };
 		40AAFF3E26535F2A008F6E78 /* BigVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AAFF3D26535F2A008F6E78 /* BigVideoCollectionViewCell.swift */; };
 		40AAFF462653937A008F6E78 /* SecondSmallVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AAFF452653937A008F6E78 /* SecondSmallVideoCollectionViewCell.swift */; };
 		709CD0EA2651601A00A1C445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CD0E92651601A00A1C445 /* AppDelegate.swift */; };
@@ -61,6 +70,15 @@
 		091A91516E03B3616C9E975E /* Pods-Watcha-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watcha-iOS.release.xcconfig"; path = "Target Support Files/Pods-Watcha-iOS/Pods-Watcha-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		34493663EED402D2AC614590 /* Pods-Watcha-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watcha-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Watcha-iOS/Pods-Watcha-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4002D39F2653375F00A97BB7 /* FirstSmallVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSmallVideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		403173A2266808E5008F8ED4 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		403173A52668097B008F8ED4 /* MainBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainBannerModel.swift; path = "Watcha-iOS/Common/MainBannerModel.swift"; sourceTree = SOURCE_ROOT; };
+		403173A826680A3E008F8ED4 /* MainBannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainBannerService.swift; path = "Watcha-iOS/Common/MainBannerService.swift"; sourceTree = SOURCE_ROOT; };
+		404A362826692FB800881231 /* SecondSmallVideoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSmallVideoDataModel.swift; sourceTree = "<group>"; };
+		404A362B26692FCE00881231 /* SecondSmallVideoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSmallVideoService.swift; sourceTree = "<group>"; };
+		40547FDE2668E1730098C4B2 /* FirstSmallVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstSmallVideoModel.swift; path = "Watcha-iOS/Common/FirstSmallVideoModel.swift"; sourceTree = SOURCE_ROOT; };
+		40547FE12668E2FE0098C4B2 /* FirstSmallVideoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstSmallVideoService.swift; path = "Watcha-iOS/Common/FirstSmallVideoService.swift"; sourceTree = SOURCE_ROOT; };
+		4071C5AE26693BBE00ED5D80 /* BigVideoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigVideoDataModel.swift; sourceTree = "<group>"; };
+		4071C5B126693BD000ED5D80 /* BigVideoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigVideoService.swift; sourceTree = "<group>"; };
 		40AAFF3D26535F2A008F6E78 /* BigVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigVideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		40AAFF452653937A008F6E78 /* SecondSmallVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSmallVideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		709CD0E62651601A00A1C445 /* Watcha-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watcha-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +196,7 @@
 			children = (
 				709CD11E2651652D00A1C445 /* Extensions */,
 				709CD137265165C300A1C445 /* Constants.swift */,
+				403173A2266808E5008F8ED4 /* NetworkResult.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -236,6 +255,14 @@
 		709CD1202651654400A1C445 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				403173A52668097B008F8ED4 /* MainBannerModel.swift */,
+				403173A826680A3E008F8ED4 /* MainBannerService.swift */,
+				40547FDE2668E1730098C4B2 /* FirstSmallVideoModel.swift */,
+				40547FE12668E2FE0098C4B2 /* FirstSmallVideoService.swift */,
+				4071C5AE26693BBE00ED5D80 /* BigVideoDataModel.swift */,
+				4071C5B126693BD000ED5D80 /* BigVideoService.swift */,
+				404A362B26692FCE00881231 /* SecondSmallVideoService.swift */,
+				404A362826692FB800881231 /* SecondSmallVideoDataModel.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -554,6 +581,7 @@
 				70BE636C2653B45300F2678F /* DirectorTVC.swift in Sources */,
 				709CD0EA2651601A00A1C445 /* AppDelegate.swift in Sources */,
 				70BE63902653C79300F2678F /* DirectorCVC.swift in Sources */,
+				4071C5AF26693BBE00ED5D80 /* BigVideoDataModel.swift in Sources */,
 				709CD15A2651970800A1C445 /* BigVideoModel.swift in Sources */,
 				70BE63502652FBFB00F2678F /* SearchTitleModel.swift in Sources */,
 				70BE63832653C51800F2678F /* RecommandCVC.swift in Sources */,
@@ -564,6 +592,7 @@
 				4002D3A02653375F00A97BB7 /* FirstSmallVideoCollectionViewCell.swift in Sources */,
 				709CD149265167CA00A1C445 /* MainPosterCollectionViewCell.swift in Sources */,
 				709CD1672651975B00A1C445 /* NameModel.swift in Sources */,
+				4071C5B226693BD000ED5D80 /* BigVideoService.swift in Sources */,
 				709CD138265165C300A1C445 /* Constants.swift in Sources */,
 				70BE637B2653B86100F2678F /* Extension+UITableViewCell.swift in Sources */,
 				70BE63752653B4BF00F2678F /* CrewPickTVC.swift in Sources */,
@@ -572,14 +601,21 @@
 				709CD15126516B2300A1C445 /* PosterModel.swift in Sources */,
 				70BE637E2653B87100F2678F /* Extension+UITableView.swift in Sources */,
 				40AAFF462653937A008F6E78 /* SecondSmallVideoCollectionViewCell.swift in Sources */,
+				403173A3266808E5008F8ED4 /* NetworkResult.swift in Sources */,
 				709CD1612651972100A1C445 /* SmallPosterModel.swift in Sources */,
 				FC200B072652B40100F320DC /* MyPageViewController.swift in Sources */,
 				70BE632C2652E5CA00F2678F /* SmallPosterCVC.swift in Sources */,
 				709CD12F2651659600A1C445 /* HomeViewController.swift in Sources */,
 				709CD132265165A200A1C445 /* UIColor.swift in Sources */,
+				40547FDF2668E1730098C4B2 /* FirstSmallVideoModel.swift in Sources */,
 				709CD157265196FA00A1C445 /* SmallVideoModel.swift in Sources */,
+				40547FE22668E2FE0098C4B2 /* FirstSmallVideoService.swift in Sources */,
+				404A362926692FB800881231 /* SecondSmallVideoDataModel.swift in Sources */,
+				403173A926680A3E008F8ED4 /* MainBannerService.swift in Sources */,
 				70BE63562653018600F2678F /* SmallPosterTVC.swift in Sources */,
+				404A362C26692FCE00881231 /* SecondSmallVideoService.swift in Sources */,
 				709CD1642651974A00A1C445 /* CrewCollectionModel.swift in Sources */,
+				403173A62668097B008F8ED4 /* MainBannerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,13 +756,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6925UVH9D7;
+				DEVELOPMENT_TEAM = 3TAJ2UVSWN;
 				INFOPLIST_FILE = "Watcha-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jenny.Watcha-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SJHAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -740,13 +776,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6925UVH9D7;
+				DEVELOPMENT_TEAM = 3TAJ2UVSWN;
 				INFOPLIST_FILE = "Watcha-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jenny.Watcha-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SJHAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

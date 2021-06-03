@@ -12,13 +12,8 @@ import UIKit
 
 struct PosterModel {
     let image: UIImage
-    let title: String
-    let subtitle: String
     
-    init(imageName : String, title: String, subtitle: String) {
-        self.title = title
-        self.subtitle = subtitle
-        
+    init(imageName : String) {
         if let image = UIImage(named: imageName)
         {
             self.image = image
