@@ -23,10 +23,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var firstSmallVideoLabel: UILabel!
     @IBOutlet weak var secondSmallVideoLabel: UILabel!
     
-    var mainPosterList: [PosterModel] = []
-    var firstSmallVideoList: [SmallVideoModel] = []
-    var bigVideoList: [BigVideoModel] = []
-    var secondSmallVideoList: [SmallVideoModel] = []
+    var mainPosterList: [MainBanner] = []
+    var firstSmallVideoList: [MainWatching] = []
+    var secondSmallVideoList: [MainRecommend] = []
+    var bigVideoList: [MainPedia] = []
     
     //MARK:- Variable Part
     
@@ -44,16 +44,16 @@ class HomeViewController: UIViewController {
         bgColorSet()
         delegateSet()
         fontSet()
-        mainPosterSet()
-        pageSet()
-        firstSmallVideoSet()
-        bigVideoSet()
-        secondSmallVideoSet()
+        getMainBanner()
+        getFirstSmallVideo()
+        getSecondSmallVideo()
+        getBigVideo()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         scrollToIndex(index: 3)
-        pageCtrl.currentPage = 3
+        fontSet()
+        
     }
     
     //MARK:- IBAction Part
@@ -61,6 +61,94 @@ class HomeViewController: UIViewController {
     
     
     //MARK:- default Setting Function Part
+    func getMainBanner()
+    {
+        MainBannerService.shared.getData { (result) in
+            switch(result)
+            {
+            case .success(let bannerObject):
+                if let banner = bannerObject as? MainBannerDataModel {
+                    self.mainPosterList = banner.data.mainBanner
+                    self.mainPosterCollectionView.reloadData()
+                    self.pageCtrl.numberOfPages = self.mainPosterList.count
+                }
+            case .requestErr(_):
+                return
+            case .pathErr:
+                return
+            case .serverErr:
+                return
+            case .networkFail:
+                return
+            }
+        }
+    }
+    
+    func getFirstSmallVideo()
+    {
+        FirstSmallVideoService.shared.getData { (result) in
+            switch(result)
+            {
+            case .success(let firstVideoObject):
+                if let firstVideo = firstVideoObject as? FirstSmallVideoDataModel {
+                    self.firstSmallVideoList = firstVideo.data.mainWatching
+                    self.firstSmallVideoCollectionView.reloadData()
+                }
+            case .requestErr(_):
+                return
+            case .pathErr:
+                return
+            case .serverErr:
+                return
+            case .networkFail:
+                return
+            }
+        }
+    }
+    
+    func getSecondSmallVideo()
+    {
+        SecondSmallVideoService.shared.getData { (result) in
+            switch(result)
+            {
+            case .success(let secondVideoObject):
+                if let secondVideo = secondVideoObject as? SecondSmallVideoDataModel {
+                    self.secondSmallVideoList = secondVideo.data.mainRecommend
+                    self.secondSmallVideoCollectionView.reloadData()
+                }
+            case .requestErr(_):
+                return
+            case .pathErr:
+                return
+            case .serverErr:
+                return
+            case .networkFail:
+                return
+            }
+        }
+    }
+    
+    func getBigVideo()
+    {
+        BigVideoService.shared.getData { (result) in
+            switch(result)
+            {
+            case .success(let bigVideoObject):
+                if let bigVideo = bigVideoObject as? BigVideoDataModel {
+                    self.bigVideoList = bigVideo.data.mainPedia
+                    self.bigVideoCollectionView.reloadData()
+                }
+            case .requestErr(_):
+                return
+            case .pathErr:
+                return
+            case .serverErr:
+                return
+            case .networkFail:
+                return
+            }
+        }
+    }
     
     func bgColorSet() {
         view.backgroundColor = UIColor.black
@@ -82,53 +170,11 @@ class HomeViewController: UIViewController {
         secondSmallVideoCollectionView.delegate = self
         secondSmallVideoCollectionView.dataSource = self
     }
-    
-    func pageSet() {
-        pageCtrl.numberOfPages = mainPosterList.count
-    }
-    
+
     func fontSet() {
         firstSmallVideoLabel.textColor = UIColor.watcha_white
-//        firstSmallVideoLabel.font = UIFont.maintitle_medium_rg
         secondSmallVideoLabel.textColor = UIColor.watcha_white
-//        secondSmallVideoLabel.font = UIFont.maintitle_medium_rg
     }
-    
-    func mainPosterSet() {
-        mainPosterList.append(contentsOf: [
-            PosterModel(imageName: "imgMainBigIos1"),
-            PosterModel(imageName: "imgMainBigIos2"),
-            PosterModel(imageName: "imgMainBigIos3"),
-            PosterModel(imageName: "imgMainBigIos4"),
-            PosterModel(imageName: "imgMainBigIos5"),
-            PosterModel(imageName: "imgMainBigIos6"),
-            PosterModel(imageName: "imgMainBigIos7")
-        ])
-    }
-    
-    func firstSmallVideoSet() {
-        firstSmallVideoList.append(contentsOf: [
-            SmallVideoModel(imageName: "cardSmall1", title: "캐롤"),
-            SmallVideoModel(imageName: "cardSmall2", title: "검정고무신"),
-            SmallVideoModel(imageName: "cardSmall3", title: "시카고")
-        ])
-    }
-    
-    func bigVideoSet() {
-        bigVideoList.append(contentsOf: [
-            BigVideoModel(imageName: "cardMainBigImgPartyIos1", title: "거침없이 무야호", episode: "거침없이 하이킥: 에피소드 157", watchingPerson: "봉준호사랑해", numOfpeople: 27),
-            BigVideoModel(imageName: "cardMainBigImgPartyIos2", title: "대만영화", episode: "상견니", watchingPerson: "현경", numOfpeople: 14)
-        ])
-    }
-    
-    func secondSmallVideoSet() {
-        secondSmallVideoList.append(contentsOf: [
-            SmallVideoModel(imageName: "cardSmall4", title: "싱스트리트"),
-            SmallVideoModel(imageName: "cardSmall5", title: "드림걸즈"),
-            SmallVideoModel(imageName: "cardSmall6", title: "하하네")
-        ])
-    }
-    
     
     //MARK:- Function Part
     
@@ -138,6 +184,7 @@ class HomeViewController: UIViewController {
     }
     
 }
+
 //MARK:- extension 부분
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource{
@@ -160,24 +207,34 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         if collectionView == mainPosterCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainPosterCollectionViewCell", for: indexPath) as? MainPosterCollectionViewCell  else { return UICollectionViewCell() }
-            cell.posterImageView.image = mainPosterList[indexPath.row].image
+            let url = URL(string: mainPosterList[indexPath.row].image)
+            let data = try? Data(contentsOf: url!)
+            cell.posterImageView.image = UIImage(data: data!)
+            cell.posterLargeTitle.text = mainPosterList[indexPath.row].largeTitle
+            cell.posterDescription.text = mainPosterList[indexPath.row].mainBannerDescription
             return cell
         }
         else if collectionView == firstSmallVideoCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstSmallVideoCollectionViewCell", for: indexPath) as? FirstSmallVideoCollectionViewCell  else { return UICollectionViewCell() }
-            cell.img.image = firstSmallVideoList[indexPath.row].image
+            let url = URL(string: firstSmallVideoList[indexPath.row].image)
+            let data = try? Data(contentsOf: url!)
+            cell.img.image = UIImage(data: data!)
             cell.title.text = firstSmallVideoList[indexPath.row].title
             return cell
         } else if collectionView == bigVideoCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BigVideoCollectionViewCell", for: indexPath) as? BigVideoCollectionViewCell  else { return UICollectionViewCell() }
-            cell.img.image = bigVideoList[indexPath.row].image
+            let url = URL(string: bigVideoList[indexPath.row].image)
+            let data = try? Data(contentsOf: url!)
+            cell.img.image = UIImage(data: data!)
             cell.title.text = bigVideoList[indexPath.row].title
-            cell.episode.text = bigVideoList[indexPath.row].episode
-            cell.watchingUser.text = bigVideoList[indexPath.row].watchingStatus
+            cell.episode.text = bigVideoList[indexPath.row].titleDetail
+            cell.watchingUser.text = "\(bigVideoList[indexPath.row].nickname)님 외 \(bigVideoList[indexPath.row].watchingNum)명 시청 중"
             return cell
         } else {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SecondSmallVideoCollectionViewCell", for: indexPath) as? SecondSmallVideoCollectionViewCell  else { return UICollectionViewCell() }
-            cell.img.image = secondSmallVideoList[indexPath.row].image
+            let url = URL(string: secondSmallVideoList[indexPath.row].image)
+            let data = try? Data(contentsOf: url!)
+            cell.img.image = UIImage(data: data!)
             cell.title.text = secondSmallVideoList[indexPath.row].title
             return cell
         }
@@ -192,21 +249,21 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        if collectionView == mainPosterCollectionView {
-            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        } else {
-            return UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 0)
-        }
 
+        if collectionView == bigVideoCollectionView {
+            return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
+        } else {
+            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         if collectionView == mainPosterCollectionView {
             return 0
         } else if collectionView == firstSmallVideoCollectionView{
-            return 4
-        } else {
             return -12
+        } else {
+            return -20
         }
     }
 }

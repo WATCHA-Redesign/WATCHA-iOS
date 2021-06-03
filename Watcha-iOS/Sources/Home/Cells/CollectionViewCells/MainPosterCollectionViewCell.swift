@@ -12,6 +12,9 @@ class MainPosterCollectionViewCell: UICollectionViewCell {
     //MARK:- IBOutlet Part
         
     @IBOutlet var posterImageView: UIImageView!
+    @IBOutlet weak var posterLargeTitle: UILabel!
+    @IBOutlet weak var posterDescription: UILabel!
+    
     
     //MARK:- Variable Part
     
