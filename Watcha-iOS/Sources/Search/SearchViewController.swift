@@ -19,6 +19,7 @@ class SearchViewController: UIViewController {
     //MARK:- Variable
     
     var titles: [SearchTitleModel] = []
+
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -38,6 +39,7 @@ class SearchViewController: UIViewController {
         setTitleData()
         
     }
+    
     
     //MARK:- IBAction
     
