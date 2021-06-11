@@ -1,6 +1,6 @@
 # WATCHA-iOS🍎
 
-#### 클-디 합동세미나 <img src="https://user-images.githubusercontent.com/70688424/119170756-afaece00-ba9e-11eb-93d2-f10593d2bd28.png" height="18px"> 리디자인 (21.05.15~21.05.21)
+#### 클-디-서 합동세미나 <img src="https://user-images.githubusercontent.com/70688424/119170756-afaece00-ba9e-11eb-93d2-f10593d2bd28.png" height="18px"> 리디자인 (21.05.15~21.06.11)
 
 |  <center>사.상.자.들❤</center> |  <center>역할</center>
 |:--------:|:--------:|
